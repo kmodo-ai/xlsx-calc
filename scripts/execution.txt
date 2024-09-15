@@ -1,0 +1,331 @@
+Statistical profiling result from isolate-0x128008000-32918-v8.log, (6540 ticks, 3524 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+   1619   24.8%   24.8%  Builtin: KeyedLoadIC_Megamorphic
+    450    6.9%    6.9%  JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+    434    6.6%    6.6%  Builtin: StringAdd_CheckNone
+     52    0.8%    0.8%  Builtin: CEntry_Return1_ArgvOnStack_NoBuiltinExit
+     23    0.4%    0.4%  Builtin: GrowFastSmiOrObjectElements
+     18    0.3%    0.3%  Builtin: LoadIC
+     18    0.3%    0.3%  Builtin: KeyedLoadICTrampoline_Megamorphic
+     17    0.3%    0.3%  Builtin: NumberToString
+     17    0.3%    0.3%  Builtin: KeyedStoreIC_Megamorphic
+     15    0.2%    0.2%  JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+     15    0.2%    0.2%  JS: *inflate /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2595:17
+     13    0.2%    0.2%  RegExp: ([^"\s?>\/]+)\s*=\s*((?:")([^"]*)(?:")|(?:')([^']*)(?:')|([^'">\s]+))
+     13    0.2%    0.2%  Builtin: RegExpMatchFast
+     12    0.2%    0.2%  JS: *eval_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:980:18
+      9    0.1%    0.1%  Builtin: KeyedLoadIC
+      7    0.1%    0.1%  RegExp: <(?:\w+:)?c[ \/>]
+      7    0.1%    0.1%  JS: *parsexmltag /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3591:21
+      7    0.1%    0.1%  JS: *build_expression /Users/lukedunscombe/src/kmodo/xlsx-calc/src/exec_formula.js:46:26
+      7    0.1%    0.1%  Builtin: StringIndexOf
+      7    0.1%    0.1%  Builtin: StrictEqual_Baseline
+      7    0.1%    0.1%  Builtin: StrictEqual
+      7    0.1%    0.1%  Builtin: RecordWriteSaveFP
+      6    0.1%    0.1%  JS: *write_num_flt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:717:23
+      6    0.1%    0.1%  JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+      6    0.1%    0.1%  JS: *dyn /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2522:13
+      6    0.1%    0.1%  JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      6    0.1%    0.1%  Builtin: SubString
+      6    0.1%    0.1%  Builtin: StringSubstring
+      6    0.1%    0.1%  Builtin: LoadIC_Megamorphic
+      6    0.1%    0.1%  Builtin: KeyedStoreIC
+      6    0.1%    0.1%  Builtin: CallFunction_ReceiverIsNullOrUndefined
+      5    0.1%    0.1%  RegExp: <(?:\w+:)?f(?: xml:space="preserve")?(?:[^>]*)>([\s\S]*?)<\/(?:\w+:)?f>
+      5    0.1%    0.1%  JS: *choose_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:1199:20
+      5    0.1%    0.1%  JS: *build_tree /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2340:20
+      5    0.1%    0.1%  JS: *Exp /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:17:30
+      5    0.1%    0.1%  Builtin: StringPrototypeMatch
+      4    0.1%    0.1%  RegExp: <\/(?:\w+:)?row>
+      4    0.1%    0.1%  JS: ^inflate /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2595:17
+      4    0.1%    0.1%  JS: *str_2_val /Users/lukedunscombe/src/kmodo/xlsx-calc/src/str_2_val.js:35:36
+      4    0.1%    0.1%  Builtin: LessThan_Baseline
+      4    0.1%    0.1%  Builtin: Increment_Baseline
+      4    0.1%    0.1%  Builtin: CompileLazy
+      3    0.0%    0.0%  RegExp: &(?:quot|apos|gt|lt|amp|#x?([\da-fA-F]+));
+      3    0.0%    0.0%  JS: *expression_builder /Users/lukedunscombe/src/kmodo/xlsx-calc/src/expression_builder.js:17:45
+      3    0.0%    0.0%  JS: *VLOOKUP /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/@formulajs/formulajs/lib/cjs/index.cjs:1394:17
+      3    0.0%    0.0%  JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/dynamic_array_compatible.js:4:21
+      3    0.0%    0.0%  Builtin: StringPrototypeCharCodeAt
+      3    0.0%    0.0%  Builtin: StoreIC
+      3    0.0%    0.0%  Builtin: RegExpReplace
+      3    0.0%    0.0%  Builtin: GetProperty
+      3    0.0%    0.0%  Builtin: Add_Baseline
+      2    0.0%    0.0%  RegExp: r=["']([^"']*)["']
+      2    0.0%    0.0%  RegExp: ^[^!]+![A-Z]+[0-9]+:[A-Z]+[0-9]+$
+      2    0.0%    0.0%  RegExp: ^[^!]+![A-Z]+:[A-Z]+$
+      2    0.0%    0.0%  RegExp: ^#*0*\.([0#]+)
+      2    0.0%    0.0%  RegExp: \.(\d*)$
+      2    0.0%    0.0%  JS: ^parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      2    0.0%    0.0%  JS: ^find_all_cells_with_formulas /Users/lukedunscombe/src/kmodo/xlsx-calc/src/find_all_cells_with_formulas.js:3:55
+      2    0.0%    0.0%  JS: ^build_tree /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2340:20
+      2    0.0%    0.0%  JS: *RefValue.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/RefValue.js:36:25
+      2    0.0%    0.0%  JS: *Exp.self.push /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:283:25
+      2    0.0%    0.0%  JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:12813:38
+      2    0.0%    0.0%  Builtin: StringPrototypeTrim
+      2    0.0%    0.0%  Builtin: StringPrototypeSlice
+      2    0.0%    0.0%  Builtin: StringPrototypeReplace
+      2    0.0%    0.0%  Builtin: StringEqual
+      2    0.0%    0.0%  Builtin: RegExpSplit
+      2    0.0%    0.0%  Builtin: NumberParseFloat
+      2    0.0%    0.0%  Builtin: FastNewClosure
+      2    0.0%    0.0%  Builtin: DefineNamedOwnIC
+      2    0.0%    0.0%  Builtin: Call_ReceiverIsNotNullOrUndefined
+      2    0.0%    0.0%  Builtin: BitwiseOr_Baseline
+      1    0.0%    0.0%  RegExp: _x([\da-fA-F]{4})_
+      1    0.0%    0.0%  RegExp: ^[A-Z]+[0-9]+:[A-Z]+[0-9]+$
+      1    0.0%    0.0%  RegExp: ^([^\.]+)$
+      1    0.0%    0.0%  RegExp: ^#+0+$
+      1    0.0%    0.0%  RegExp: ^#+([0.])
+      1    0.0%    0.0%  RegExp: \[[HhMmSs\u0E0A\u0E19\u0E17]*\]
+      1    0.0%    0.0%  RegExp: \$(\d+)$
+      1    0.0%    0.0%  RegExp: <f[^>]*\/>
+      1    0.0%    0.0%  RegExp: <(?:\w:)?sheetViews[^>]*(?:[\/]|>([\s\S]*)<\/(?:\w:)?sheetViews)>
+      1    0.0%    0.0%  RegExp: <(?:\w+:)?v(?: xml:space="preserve")?(?:[^>]*)>([\s\S]*?)<\/(?:\w+:)?v>
+      1    0.0%    0.0%  RegExp: <(?:\w+:)?sheetData[^>]*>([\s\S]*)<\/(?:\w+:)?sheetData>
+      1    0.0%    0.0%  RegExp: # (\?+)( ?)\/( ?)(\d+)
+      1    0.0%    0.0%  JS: ~zip_read /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3565:18
+      1    0.0%    0.0%  JS: ~parse_r /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:10101:18
+      1    0.0%    0.0%  JS: ~_deflateRawIIFE /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:2397:49
+      1    0.0%    0.0%  JS: ~Module.require node:internal/modules/cjs/loader:1227:36
+      1    0.0%    0.0%  JS: ^write_num_flt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:717:23
+      1    0.0%    0.0%  JS: ^toNegative /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:141:24
+      1    0.0%    0.0%  JS: ^str_2_val /Users/lukedunscombe/src/kmodo/xlsx-calc/src/str_2_val.js:35:36
+      1    0.0%    0.0%  JS: ^parsexmltag /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3591:21
+      1    0.0%    0.0%  JS: ^getCellType /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:85:25
+      1    0.0%    0.0%  JS: ^execNegativePow /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:174:26
+      1    0.0%    0.0%  JS: ^eval_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:980:18
+      1    0.0%    0.0%  JS: ^RefValue.self.parseRef /Users/lukedunscombe/src/kmodo/xlsx-calc/src/RefValue.js:11:29
+      1    0.0%    0.0%  JS: ^Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/dynamic_array_compatible.js:4:21
+      1    0.0%    0.0%  JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/dist/cpexcel.js:109:25
+      1    0.0%    0.0%  JS: *write_num_int /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:833:23
+      1    0.0%    0.0%  JS: *utf8readc /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3718:19
+      1    0.0%    0.0%  JS: *start /Users/lukedunscombe/src/kmodo/xlsx-calc/src/expression_builder.js:104:19
+      1    0.0%    0.0%  JS: *pad0 /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:295:14
+      1    0.0%    0.0%  JS: *normalizeString node:path:66:25
+      1    0.0%    0.0%  JS: *make_dbcs_encode /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/dist/cpexcel.js:1102:48
+      1    0.0%    0.0%  JS: *make_EE /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/dist/cpexcel.js:1030:35
+      1    0.0%    0.0%  JS: *ini_parentheses /Users/lukedunscombe/src/kmodo/xlsx-calc/src/expression_builder.js:56:29
+      1    0.0%    0.0%  JS: *exec_minus /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:145:24
+      1    0.0%    0.0%  JS: *decode_cell /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:4256:21
+      1    0.0%    0.0%  JS: *carry /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:707:15
+      1    0.0%    0.0%  JS: *add_operation /Users/lukedunscombe/src/kmodo/xlsx-calc/src/expression_builder.js:95:27
+      1    0.0%    0.0%  JS: *UserRawFnExecutor /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserRawFnExecutor.js:3:44
+      1    0.0%    0.0%  JS: *UserFnExecutor /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:5:41
+      1    0.0%    0.0%  JS: *RawValue /Users/lukedunscombe/src/kmodo/xlsx-calc/src/RawValue.js:3:35
+      1    0.0%    0.0%  JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:737:127
+      1    0.0%    0.0%  Builtin: ToBooleanForBaselineJump
+      1    0.0%    0.0%  Builtin: StringToLowerCaseIntl
+      1    0.0%    0.0%  Builtin: StringPrototypeIndexOf
+      1    0.0%    0.0%  Builtin: StringPrototypeCharAt
+      1    0.0%    0.0%  Builtin: StoreFastElementIC_Standard
+      1    0.0%    0.0%  Builtin: OrdinaryToPrimitive_Number_Inline
+      1    0.0%    0.0%  Builtin: NonPrimitiveToPrimitive_Default
+      1    0.0%    0.0%  Builtin: NonNumberToNumber
+      1    0.0%    0.0%  Builtin: LoadICTrampoline_Megamorphic
+      1    0.0%    0.0%  Builtin: LoadICBaseline
+      1    0.0%    0.0%  Builtin: GreaterThan_Baseline
+      1    0.0%    0.0%  Builtin: FunctionPrototypeHasInstance
+      1    0.0%    0.0%  Builtin: FastNewFunctionContextFunction
+      1    0.0%    0.0%  Builtin: ExtractFastJSArray
+      1    0.0%    0.0%  Builtin: Equal_Baseline
+      1    0.0%    0.0%  Builtin: DefineNamedOwnIC_NoFeedback
+      1    0.0%    0.0%  Builtin: Decrement_Baseline
+      1    0.0%    0.0%  Builtin: Call_ReceiverIsNullOrUndefined_Baseline_Compact
+      1    0.0%    0.0%  Builtin: Call_ReceiverIsNotNullOrUndefined_Baseline_Compact
+      1    0.0%    0.0%  Builtin: CallFunction_ReceiverIsNotNullOrUndefined
+      1    0.0%    0.0%  Builtin: CallFunction_ReceiverIsAny
+      1    0.0%    0.0%  Builtin: CallApiCallback
+      1    0.0%    0.0%  Builtin: BaselineLeaveFrame
+      1    0.0%    0.0%  Builtin: ArrayPrototypePush
+      1    0.0%    0.0%  Builtin: ArrayPrototypePop
+      1    0.0%    0.0%  Builtin: ArrayPrototypeConcat
+      1    0.0%    0.0%  Builtin: ArrayMap
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+   3016   46.1%   46.1%  JavaScript
+      0    0.0%    0.0%  C++
+    160    2.4%    2.4%  GC
+      0    0.0%          Shared libraries
+   3524   53.9%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   3524   53.9%  UNKNOWN
+   2940   83.4%    JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+   1644   55.9%      JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+   1644  100.0%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+   1644  100.0%          Builtin: ArrayMap
+    890   54.1%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    754   45.9%            JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+   1158   39.4%      JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+   1158  100.0%        Builtin: ArrayMap
+   1158  100.0%          JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+   1145   98.9%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     12    1.0%            JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+    138    4.7%      JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    134   97.1%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    134  100.0%          Builtin: ArrayMap
+    134  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+      4    2.9%        JS: ~<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+      4  100.0%          Builtin: ArrayMap
+      4  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+     69    2.0%    JS: ~internalCompileFunction node:internal/vm:73:33
+     69  100.0%      JS: ~wrapSafe node:internal/modules/cjs/loader:1257:18
+     69  100.0%        JS: ~Module._compile node:internal/modules/cjs/loader:1330:37
+     69  100.0%          JS: ~Module._extensions..js node:internal/modules/cjs/loader:1389:37
+     69  100.0%            JS: ~Module.load node:internal/modules/cjs/loader:1194:33
+     38    1.1%    Builtin: StringPrototypeReplace
+      9   23.7%      JS: *write_num_flt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:717:23
+      9  100.0%        JS: *eval_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:980:18
+      9  100.0%          JS: *safe_format /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15462:21
+      9  100.0%            JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      6   15.8%      JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      6  100.0%        JS: ~parse_ws_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15523:22
+      6  100.0%          JS: ~parse_ws /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18156:18
+      6  100.0%            JS: ~safe_parse_sheet /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26087:26
+      5   13.2%      JS: *write_num_int /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:833:23
+      5  100.0%        JS: *eval_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:980:18
+      5  100.0%          JS: *safe_format /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15462:21
+      5  100.0%            JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      4   10.5%      JS: *unescapexml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3642:29
+      4  100.0%        JS: ^parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      4  100.0%          JS: ~parse_ws_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15523:22
+      4  100.0%            JS: ~parse_ws /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18156:18
+      4   10.5%      JS: *shift_formula_xlsx /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:12818:28
+      3   75.0%        JS: ^parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      3  100.0%          JS: ~parse_ws_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15523:22
+      3  100.0%            JS: ~parse_ws /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18156:18
+      1   25.0%        JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      1  100.0%          JS: ~parse_ws_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15523:22
+      1  100.0%            JS: ~parse_ws /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18156:18
+      3    7.9%      JS: ^write_num_flt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:717:23
+      2   66.7%        JS: ^write_num /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:917:19
+      2  100.0%          JS: ^write_num_pct /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:642:23
+      2  100.0%            JS: ^write_num_flt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:717:23
+      1   33.3%        JS: *write_num /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:917:19
+      1  100.0%          JS: ^eval_fmt /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:980:18
+      1  100.0%            JS: *SSF_format /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:1220:20
+      2    5.3%      JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:12813:38
+      2  100.0%        Builtin: StringPrototypeReplace
+      2  100.0%          JS: *shift_formula_xlsx /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:12818:28
+      2  100.0%            JS: *parse_ws_xml_data /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:15834:34
+      1    2.6%      JS: ~parse_zip /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26131:19
+      1  100.0%        JS: ~read_zip /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26699:18
+      1  100.0%          JS: ~readSync /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26754:18
+      1  100.0%            JS: ~<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/scripts/benchmark.js:1:1
+      1    2.6%      JS: ~parse_wb_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:17552:22
+      1  100.0%        JS: ~parse_wb /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18151:18
+      1  100.0%          JS: ~parse_zip /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26131:19
+      1  100.0%            JS: ~read_zip /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:26699:18
+      1    2.6%      JS: ^write_num_int /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:833:23
+      1  100.0%        JS: *write_num /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:917:19
+      1  100.0%          JS: ^write_num_pct2 /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:807:24
+      1  100.0%            JS: ^write_num_int /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:833:23
+      1    2.6%      JS: ^stringWidth /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/cli-progress/node_modules/string-width/index.js:6:21
+      1  100.0%        JS: ~defaultFormatter /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/cli-progress/lib/formatter.js:7:43
+      1  100.0%          JS: ~render /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/cli-progress/lib/generic-bar.js:54:11
+      1  100.0%            JS: ~render /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/cli-progress/lib/single-bar.js:26:11
+      1    2.6%      JS: ^escapehtml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:3656:20
+      1  100.0%        JS: ^parse_si /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:10162:18
+      1  100.0%          JS: ^parse_sst_xml /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:10189:23
+      1  100.0%            JS: ~parse_sst /Users/lukedunscombe/src/kmodo/xlsx-calc/node_modules/xlsx/xlsx.js:18181:19
+
+   1619   24.8%  Builtin: KeyedLoadIC_Megamorphic
+   1609   99.4%    JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+    948   58.9%      JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    948  100.0%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    948  100.0%          Builtin: ArrayMap
+    518   54.6%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    430   45.4%            JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    575   35.7%      JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    575  100.0%        Builtin: ArrayMap
+    575  100.0%          JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    567   98.6%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      8    1.4%            JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+     86    5.3%      JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     85   98.8%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+     85  100.0%          Builtin: ArrayMap
+     85  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+      1    1.2%        JS: ~<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+      1  100.0%          Builtin: ArrayMap
+      1  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+
+    450    6.9%  JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+    259   57.6%    JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    259  100.0%      JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    259  100.0%        Builtin: ArrayMap
+    131   50.6%          JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    131  100.0%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    128   49.4%          JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    125   97.7%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      3    2.3%            JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+    174   38.7%    JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    174  100.0%      Builtin: ArrayMap
+    174  100.0%        JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    173   99.4%          JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    118   68.2%            JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+     55   31.8%            JS: ^update_cell_value /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:25:31
+     17    3.8%    JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     17  100.0%      JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+     17  100.0%        Builtin: ArrayMap
+     17  100.0%          JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+     17  100.0%            JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+
+    434    6.6%  Builtin: StringAdd_CheckNone
+    234   53.9%    JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    234  100.0%      JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    234  100.0%        Builtin: ArrayMap
+    131   56.0%          JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    131  100.0%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    103   44.0%          JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    100   97.1%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      3    2.9%            JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+    139   32.0%    JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+    139  100.0%      Builtin: ArrayMap
+    139  100.0%        JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+    137   98.6%          JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+    106   77.4%            JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+     31   22.6%            JS: ^update_cell_value /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:25:31
+      2    1.4%          JS: *exec /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:107:18
+      2  100.0%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     29    6.7%    JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     29  100.0%      JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+     29  100.0%        Builtin: ArrayMap
+     29  100.0%          JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+     29  100.0%            JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     26    6.0%    JS: *Range.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Range.js:40:25
+     12   46.2%      JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+     12  100.0%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+     12  100.0%          Builtin: ArrayMap
+      7   58.3%            JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+      5   41.7%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+     11   42.3%      JS: *<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+     11  100.0%        Builtin: ArrayMap
+     11  100.0%          JS: ^UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+     11  100.0%            JS: *Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      3   11.5%      JS: ^Exp.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/Exp.js:202:25
+      2   66.7%        JS: ^<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+      2  100.0%          Builtin: ArrayMap
+      2  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+      1   33.3%        JS: ~<anonymous> /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:12:62
+      1  100.0%          Builtin: ArrayMap
+      1  100.0%            JS: ~UserFnExecutor.self.calc /Users/lukedunscombe/src/kmodo/xlsx-calc/src/UserFnExecutor.js:9:26
+

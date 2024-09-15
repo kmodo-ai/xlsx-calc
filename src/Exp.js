@@ -21,7 +21,7 @@ module.exports = function Exp(formula) {
     self.name = 'Expression';
     self.update_cell_value = update_cell_value;
     self.formula = formula;
-    
+
     function update_cell_value() {
         try {
             formula.cell.v = self.calc();
@@ -97,13 +97,13 @@ module.exports = function Exp(formula) {
     function isEmpty(value) {
         return value === undefined || value === null || value === "";
     }
-    
+
     function checkVariable(obj) {
         if (typeof obj.calc !== 'function') {
             throw new Error('Undefined ' + obj);
         }
     }
-    
+
     function exec(op, args, fn) {
         for (var i = 0; i < args.length; i++) {
             if (args[i] === op) {
