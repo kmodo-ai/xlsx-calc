@@ -33,7 +33,7 @@ const n = 1;
 bar.start(n, 0);
 for (let i = 0; i < n; i++) {
     const t0 = performance.now();
-    XLSX_CALC(wb);
+    XLSX_CALC(wb, { continue_after_error: true });
     const t1 = performance.now();
     const previous = t1-t0;
     times.push(previous)

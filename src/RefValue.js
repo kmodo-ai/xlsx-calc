@@ -47,7 +47,7 @@ module.exports = function RefValue(str_expression, formula) {
             if (formula_ref.status === 'new') {
                 formula.exec_formula(formula_ref);
                 if (ref_cell.t === 'e') {
-                    console.log('ref is an error with new formula', cell_full_name, ref_cell.w);
+                    // console.log('ref is an error with new formula', cell_full_name, ref_cell.w);
                     throw new Error(ref_cell.w);
                 }
                 return ref_cell.v;
@@ -61,7 +61,7 @@ module.exports = function RefValue(str_expression, formula) {
             }
             else if (formula_ref.status === 'done') {
                 if (ref_cell.t === 'e') {
-                    console.log('ref is an error after formula eval', cell_full_name, ref_cell.w);
+                    // console.log('ref is an error after formula eval', cell_full_name, ref_cell.w);
                     throw new Error(ref_cell.w);
                 }
                 return ref_cell.v;
@@ -69,7 +69,7 @@ module.exports = function RefValue(str_expression, formula) {
         }
         else {
             if (ref_cell.t === 'e') {
-                console.log('ref is an error with no formula', cell_name);
+                // console.log('ref is an error with no formula', cell_name);
                 throw new Error(ref_cell.w);
             }
             return ref_cell.v;
