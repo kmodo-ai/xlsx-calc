@@ -12,11 +12,9 @@
     "test-w": "mocha -w --check-leaks --sort",
     "build": "webpack --mode=production && sh deprecated-clones.sh"
   },
-  "dependencies": {
-    "cli-progress": "^3.12.0"
-  },
   "devDependencies": {
     "@formulajs/formulajs": "^2.6.3",
+    "cli-progress": "^3.12.0",
     "mocha": "^8.3.0",
     "nyc": "^15.1.0",
     "pre-commit": "^1.2.2",
